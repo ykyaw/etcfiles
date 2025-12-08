@@ -1,0 +1,19 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/root LABEL=ROOT
+UUID=95bb1d6a-58d1-46ad-8eee-55eee836634d	/         	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@	0 0
+
+# /dev/mapper/root LABEL=ROOT
+UUID=95bb1d6a-58d1-46ad-8eee-55eee836634d	/home     	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
+
+# /dev/mapper/root LABEL=ROOT
+UUID=95bb1d6a-58d1-46ad-8eee-55eee836634d	/var/log  	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@log	0 0
+
+# /dev/mapper/root LABEL=ROOT
+UUID=95bb1d6a-58d1-46ad-8eee-55eee836634d	/var/cache/pacman/pkg	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@pkg	0 0
+
+# /dev/nvme0n1p1 LABEL=ESP
+UUID=7E79-D0F6      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
