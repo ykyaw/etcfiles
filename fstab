@@ -17,3 +17,27 @@ UUID=95bb1d6a-58d1-46ad-8eee-55eee836634d	/var/cache/pacman/pkg	btrfs     	rw,no
 # /dev/nvme0n1p1 LABEL=ESP
 UUID=7E79-D0F6      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Desktop     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@desktop	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Documents     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@documents	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Downloads     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@downloads	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Music     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@music	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Pictures     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@pictures	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Public     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@public	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Templates     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@templates	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=02c34134-bd5b-4fcd-afb7-d85cd1951385	/home/thatoe/Videos     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@videos	0 0
+
