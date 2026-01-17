@@ -2,18 +2,42 @@
 # See fstab(5) for details.
 
 # <file system> <dir> <type> <options> <dump> <pass>
-# /dev/mapper/nix LABEL=NIX
+# /dev/mapper/nix LABEL=ROOT
 UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/         	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@	0 0
 
-# /dev/mapper/nix LABEL=NIX
+# /dev/mapper/nix LABEL=ROOT
 UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/home     	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
 
-# /dev/mapper/nix LABEL=NIX
+# /dev/mapper/nix LABEL=ROOT
 UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/var/log  	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@log	0 0
 
-# /dev/mapper/nix LABEL=NIX
+# /dev/mapper/nix LABEL=ROOT
 UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/var/cache/pacman/pkg	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@pkg	0 0
 
 # /dev/nvme1n1p1 LABEL=ESP
 UUID=D718-18C2      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Desktop     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@desktop	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Documents     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@documents	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Downloads     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@downloads	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Music     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@music	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Pictures     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@pictures	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Public     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@public	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Templates     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@templates	0 0
+
+# /dev/mapper/data LABEL=DATA
+UUID=a8de1b9d-2c9f-48ba-823d-0dbc78ddc6e2	/home/thatoe/Videos     	btrfs     	rw,noatime,nofail,x-gvfs-hide,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@videos	0 0
 
