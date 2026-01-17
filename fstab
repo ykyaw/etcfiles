@@ -1,0 +1,19 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/nix LABEL=NIX
+UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/         	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@	0 0
+
+# /dev/mapper/nix LABEL=NIX
+UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/home     	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
+
+# /dev/mapper/nix LABEL=NIX
+UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/var/log  	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@log	0 0
+
+# /dev/mapper/nix LABEL=NIX
+UUID=85cfbac8-3654-4a75-81ba-cfc2669657c9	/var/cache/pacman/pkg	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@pkg	0 0
+
+# /dev/nvme1n1p1 LABEL=ESP
+UUID=D718-18C2      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
