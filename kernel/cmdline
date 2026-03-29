@@ -1,1 +1,1 @@
-quiet rw
+quiet rw zswap.enabled=0
