@@ -11,6 +11,9 @@ UUID=231a158f-ea0e-43f9-8989-95c08b095ee3	/home     	btrfs     	rw,noatime,compr
 # /dev/mapper/root LABEL=ROOT
 UUID=231a158f-ea0e-43f9-8989-95c08b095ee3	/var      	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@var	0 0
 
+# /dev/mapper/root LABEL=ROOT
+UUID=231a158f-ea0e-43f9-8989-95c08b095ee3	/.snapshots    	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@snapshots	0 0
+
 # /dev/nvme0n1p1 LABEL=EFI
 UUID=03E6-BE79      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
