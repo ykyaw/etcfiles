@@ -17,3 +17,6 @@ UUID=231a158f-ea0e-43f9-8989-95c08b095ee3	/.snapshots    	btrfs     	rw,noatime,
 # /dev/nvme0n1p1 LABEL=EFI
 UUID=03E6-BE79      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
+# /dev/mapper/root LABEL=DATA
+UUID=4540f157-0782-4cbc-b004-be4a216fadc4	/mnt/data    	ext4     	rw,noatime,nofail,nosuid,nodev	0 0
+
